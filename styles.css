@@ -4606,3 +4606,5 @@ img {
   flex-shrink: 1;
   flex-basis: auto;
 }
+
+#__framer-badge-container { display: none !important; }
