@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>Redirection…</title>
     <script>
-      const redirectTo = "/";
-      const originalPath = window.location.pathname + window.location.search + window.location.hash;
-      history.replaceState(null, "", originalPath);
-      window.location.href = redirectTo;
+      // Redirige vers index.html avec le chemin d’origine
+      const path = window.location.pathname;
+      const query = window.location.search;
+      const hash = window.location.hash;
+      window.location.replace("/?" + "redirect=" + encodeURIComponent(path + query + hash));
     </script>
   </head>
   <body>
