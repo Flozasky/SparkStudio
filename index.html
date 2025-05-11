@@ -51,7 +51,16 @@
 <svg viewBox="0 0 19 19" id="svg10012472841"><path d="M 12.406 12.406 L 15.894 12.406 L 15.894 3.105 L 6.594 3.105 L 6.594 6.593" fill="transparent" stroke-width="0.86792" stroke="var(--token-f53e4676-67f1-4b5a-8f31-389367a9515a, rgb(255, 255, 255)) /* {&quot;name&quot;:&quot;H1&quot;} */" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/><path d="M 12.406 6.594 L 3.106 6.594 L 3.106 15.894 L 12.406 15.894 Z" fill="transparent" stroke-width="0.86792" stroke="var(--token-f53e4676-67f1-4b5a-8f31-389367a9515a, rgb(255, 255, 255)) /* {&quot;name&quot;:&quot;H1&quot;} */" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""/></svg>
 </div>
     
-    
+<script>
+  const path = window.location.pathname;
+  const query = window.location.search;
+  const hash = window.location.hash;
+
+  if (path !== '/' && path !== '/index.html') {
+    window.location.replace(path + query + hash);
+  }
+</script>
+ 
     
 </body>
 </html>
